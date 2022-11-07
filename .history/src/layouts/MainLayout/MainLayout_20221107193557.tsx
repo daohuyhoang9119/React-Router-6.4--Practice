@@ -13,23 +13,15 @@ export default function MainLayout({ children }: Props) {
             <li>
               <NavLink
                 to='/'
-                end
-                // className='flex items-center rounded-lg bg-gray-300 p-2 text-base font-normal text-gray-900 hover:bg-gray-300'
-                className={({ isActive }) => {
-                  const activeClass = isActive ? 'bg-gray-300 font-bold' : ''
-                  return `flex items-center rounded-lg ${activeClass} p-2 text-base font-normal text-gray-900 hover:bg-gray-300`
-                }}
+                className='flex items-center rounded-lg  p-2 text-base font-normal text-gray-900 hover:bg-gray-300'
               >
-                <span className='ml-3'>Dashboard</span>
+                <span className='ml-3 font-bold'>Dashboard</span>
               </NavLink>
             </li>
             <li>
               <NavLink
                 to='/staff'
-                className={({ isActive }) => {
-                  const activeClass = isActive ? 'bg-gray-300 font-bold' : ''
-                  return `flex items-center rounded-lg ${activeClass} p-2 text-base font-normal text-gray-900 hover:bg-gray-300`
-                }}
+                className='flex items-center rounded-lg p-2 text-base font-normal text-gray-900 hover:bg-gray-300'
               >
                 <span className='ml-3'>Staff</span>
               </NavLink>
@@ -37,10 +29,7 @@ export default function MainLayout({ children }: Props) {
             <li>
               <NavLink
                 to='/about'
-                className={({ isActive }) => {
-                  const activeClass = isActive ? 'bg-gray-300 font-bold' : ''
-                  return `flex items-center rounded-lg ${activeClass} p-2 text-base font-normal text-gray-900 hover:bg-gray-300`
-                }}
+                className='flex items-center rounded-lg p-2 text-base font-normal text-gray-900 hover:bg-gray-300'
               >
                 <span className='ml-3'>About</span>
               </NavLink>

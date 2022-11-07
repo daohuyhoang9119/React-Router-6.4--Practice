@@ -1,5 +1,4 @@
 import AddStaff from 'components/AddStaff'
-import StaffList from 'components/StaffList'
 import MainLayout from 'layouts/MainLayout'
 import Page404 from 'pages/404'
 import About from 'pages/About'
@@ -15,11 +14,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Dashboard />} />
           <Route path='/about' element={<About />} />
-          <Route path='/staff' element={<Staff />}>
-            <Route path=':id' element={<StaffItem />} />
-            <Route path='add' element={<AddStaff />} />
-            <Route path='list' element={<StaffList />} />
-          </Route>
+          <Route path='/staff' element={<Staff />} />
+          <Route path='/staff/:id' element={<StaffItem />} />
+          <Route path='/staff/add' element={<AddStaff />} />
           <Route path='*' element={<Page404 />}></Route>
         </Routes>
       </MainLayout>

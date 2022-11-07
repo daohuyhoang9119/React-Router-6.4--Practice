@@ -15,11 +15,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Dashboard />} />
           <Route path='/about' element={<About />} />
-          <Route path='/staff' element={<Staff />}>
-            <Route path=':id' element={<StaffItem />} />
-            <Route path='add' element={<AddStaff />} />
-            <Route path='list' element={<StaffList />} />
-          </Route>
+          <Route path='/staff' element={<Staff />} />
+          <Route path='/staff/:id' element={<StaffItem />} />
+          <Route path='/staff/add' element={<AddStaff />} />
+          <Route path='/staff/list' element={<StaffList />} />
           <Route path='*' element={<Page404 />}></Route>
         </Routes>
       </MainLayout>

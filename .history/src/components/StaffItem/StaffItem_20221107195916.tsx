@@ -1,5 +1,6 @@
 import { Routes, Route, useParams } from 'react-router-dom'
 export default function StaffItem() {
-  const { id } = useParams()
-  return <div>StaffItem {id}</div>
+  let log = useParams()
+  console.log(log)
+  return <div>StaffItem </div>
 }

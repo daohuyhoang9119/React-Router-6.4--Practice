@@ -16,18 +16,18 @@ export default function MainLayout({ children }: Props) {
                 end
                 // className='flex items-center rounded-lg bg-gray-300 p-2 text-base font-normal text-gray-900 hover:bg-gray-300'
                 className={({ isActive }) => {
-                  const activeClass = isActive ? 'bg-gray-300 font-bold' : ''
+                  const activeClass = isActive ? 'bg-gray-300' : ''
                   return `flex items-center rounded-lg ${activeClass} p-2 text-base font-normal text-gray-900 hover:bg-gray-300`
                 }}
               >
-                <span className='ml-3'>Dashboard</span>
+                <span className='ml-3 font-bold'>Dashboard</span>
               </NavLink>
             </li>
             <li>
               <NavLink
                 to='/staff'
                 className={({ isActive }) => {
-                  const activeClass = isActive ? 'bg-gray-300 font-bold' : ''
+                  const activeClass = isActive ? 'bg-gray-300' : ''
                   return `flex items-center rounded-lg ${activeClass} p-2 text-base font-normal text-gray-900 hover:bg-gray-300`
                 }}
               >
@@ -38,7 +38,7 @@ export default function MainLayout({ children }: Props) {
               <NavLink
                 to='/about'
                 className={({ isActive }) => {
-                  const activeClass = isActive ? 'bg-gray-300 font-bold' : ''
+                  const activeClass = isActive ? 'bg-gray-300' : ''
                   return `flex items-center rounded-lg ${activeClass} p-2 text-base font-normal text-gray-900 hover:bg-gray-300`
                 }}
               >
